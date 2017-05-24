@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.clem.androiduniver.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Choose a type"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Title"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <LinearLayout
+        android:id="@+id/linearscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="65dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fillViewport="true"
+            android:foregroundGravity="center_horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:weightSum="1">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonNormal"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_normal" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonFire"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_feu" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonWatter"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_eau" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonElectric"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_elctrique" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonGrass"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_plante" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSteel"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_acier" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonFight"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_combat" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonIce"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_glace" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonFlight"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_vol" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonBug"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_insecte" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonfee"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_fee" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPoison"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_poison" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonPsy"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_psy" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonGround"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_sol" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonDark"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_tenebre" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonSpecter"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_spectre" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/imageButtonDragon"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_dragon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonRock"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/background_light"
+                        android:cropToPadding="false"
+                        app:srcCompat="@drawable/btn_roche" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/imageButtontransp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:cropToPadding="false" />
+
+                    <ImageView
+                        android:id="@+id/imageButtontransp2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:cropToPadding="false" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
